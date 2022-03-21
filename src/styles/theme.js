@@ -19,10 +19,10 @@ const devices = {
 };
 
 const colors = {
-  primaryColorDark: "#222224",
-  secondaryColorDark: "#474749",
-  ctaColor: "#2E4A62",
-  textColor: "#FFFFFF"
+  primaryBackgroundColor: "#DBDBDB",
+  secondaryBackgroundColor: "#FFFFFF",
+  ctaColor: "#B77B58",
+  highlightColor: "#000000"
 };
 
 export default {

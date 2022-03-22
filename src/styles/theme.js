@@ -22,7 +22,8 @@ const colors = {
   primaryBackgroundColor: "#DBDBDB",
   secondaryBackgroundColor: "#FFFFFF",
   ctaColor: "#B77B58",
-  highlightColor: "#000000"
+  dark: "#000000",
+  light: "#FFFFFF"
 };
 
 export default {

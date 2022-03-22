@@ -22,6 +22,8 @@ const P = styled.p`
 text-align: center;
 margin-top: 5px;
 font-family: 'Roboto', sans-serif;
+font-weight: 200;
+margin-bottom: 30px;
 `;
 
 const BurgerMenu = styled(HiOutlineMenuAlt1)`

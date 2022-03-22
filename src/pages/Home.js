@@ -1,5 +1,7 @@
+import LatestProjects from "../components/LatestProjects";
+
 const Home = () => (
-  <h1>Home</h1>
+  <LatestProjects />
 );
 
 export default Home;

@@ -32,17 +32,27 @@ const BurgerMenu = styled(HiOutlineMenuAlt1)`
 
 const Ul = styled.ul`
 display: ${(props) => props.showMenu ? "flex" : "none"};
+background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+width: 20%;
+margin-top: 32px;
 list-style-type: none;
 flex-direction: column;
 padding-left: 5px;
 position: absolute;
-margin-top:45px;
 
 li {
   margin-bottom: 10px;
+
+  a{
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.highlightColor};
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 @media ${({ theme }) => theme.devices.tabletS} { 
+  background-color: transparent;
+  width: auto;;
   display: flex;
   flex-direction: row;
   position: unset;
@@ -56,14 +66,12 @@ li {
 `;
 
 const UlSecond = styled(Ul)`
-    margin-top: 108px;
+    margin-top: 96px;
     
     @media ${({ theme }) => theme.devices.tabletS} { 
       margin-top:0;
     }
 `;
-
-
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);

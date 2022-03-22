@@ -11,7 +11,7 @@ margin-top: -18px;
 `;
 
 const Block = styled.div`
-margin: 0 10px;
+margin:0px 10px 40px 10px;
 `;
 
 const ProjectTitle = styled.div`
@@ -39,6 +39,26 @@ const LatestProjects = () => {
         <ProjectTitle>
           <H2>
             Food blog
+          </H2>
+        </ProjectTitle>
+        <p>Lorem ipusn, lorem ipusm, Lorem ipsum
+          Lorem ipusm. Lorem ipsum, lorem ipusm. </p>
+      </Block>
+      <Block>
+        <BackgroundImage img={"images/shop.jpg"} height={"260px"} />
+        <ProjectTitle>
+          <H2>
+            Webshop
+          </H2>
+        </ProjectTitle>
+        <p>Lorem ipusn, lorem ipusm, Lorem ipsum
+          Lorem ipusm. Lorem ipsum, lorem ipusm. </p>
+      </Block>
+      <Block>
+        <BackgroundImage img={"images/shoe.jpg"} height={"260px"} />
+        <ProjectTitle>
+          <H2>
+            Exam
           </H2>
         </ProjectTitle>
         <p>Lorem ipusn, lorem ipusm, Lorem ipsum

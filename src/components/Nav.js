@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import HandwrittenHeading from "./HandwrittenHeading";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
@@ -73,23 +74,29 @@ const Nav = () => {
         <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
         <Ul showMenu={showMenu}>
           <li>
-            Home
+            <NavLink to="/">
+              Home
+            </NavLink>
           </li>
           <li>
-            Portfolio
+            <NavLink to="/portfolio">
+              Portfolio
+            </NavLink>
           </li>
         </Ul>
         <Name>Janne Ringdal</Name>
         <UlSecond showMenu={showMenu}>
           <li>
-            About
+            <NavLink to="/about">
+              About
+            </NavLink>
           </li>
           <li>
-            Contact
+            <NavLink to="/contact">
+              Contact
+            </NavLink>
           </li>
         </UlSecond>
-
-
       </Div>
       <P>Front end developer</P>
     </nav>

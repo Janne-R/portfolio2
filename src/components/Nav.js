@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import HandwrittenHeading from "./HandwrittenHeading";
+import { HandWrittenP } from "./Handwritten";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 const Div = styled.div`
@@ -11,7 +11,7 @@ const Div = styled.div`
     grid-template-columns: 1fr 2fr 1fr;
 `;
 
-const Name = styled(HandwrittenHeading)`
+const Name = styled(HandWrittenP)`
 text-align: center;
 font-size: 32px;
 margin: 0;

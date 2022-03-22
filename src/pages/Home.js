@@ -1,7 +1,11 @@
 import LatestProjects from "../components/LatestProjects";
+import Introduction from "../components/Introduction";
 
 const Home = () => (
-  <LatestProjects />
+  <>
+    <LatestProjects />
+    <Introduction />
+  </>
 );
 
 export default Home;

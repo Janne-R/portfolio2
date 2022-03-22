@@ -37,17 +37,26 @@ padding-right: 10px;
 position: absolute;
 right:0;
 margin-top:30px;
-`;
 
-const Li = styled.li`
-margin-bottom: 10px;
+li {
+  margin-bottom: 10px;
+}
+
+@media ${({ theme }) => theme.devices.tabletS} { 
+  display: flex;
+  flex-direction: row;
+  position: unset;
+  margin-top:0;
+  li {
+  margin-bottom: 0;
+}
+}
 `;
 
 const Container = styled.div`
     display: flex;
     justify-content: flex-end;
 `;
-
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -59,18 +68,18 @@ const Nav = () => {
         <Container>
           <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
           <Ul showMenu={showMenu}>
-            <Li>
+            <li>
               Home
-            </Li>
-            <Li>
+            </li>
+            <li>
               Portfolio
-            </Li>
-            <Li>
+            </li>
+            <li>
               About
-            </Li>
-            <Li>
+            </li>
+            <li>
               Contact
-            </Li>
+            </li>
           </Ul>
         </Container>
       </Div>

@@ -33,10 +33,9 @@ const Ul = styled.ul`
 display: ${(props) => props.showMenu ? "flex" : "none"};
 list-style-type: none;
 flex-direction: column;
-padding-right: 10px;
+padding-left: 5px;
 position: absolute;
-right:0;
-margin-top:30px;
+margin-top:45px;
 
 li {
   margin-bottom: 10px;
@@ -53,10 +52,7 @@ li {
 }
 `;
 
-const Container = styled.div`
-    display: flex;
-    justify-content: flex-end;
-`;
+
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -64,24 +60,24 @@ const Nav = () => {
   return (
     <nav>
       <Div>
+
+
+        <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
+        <Ul showMenu={showMenu}>
+          <li>
+            Home
+          </li>
+          <li>
+            Portfolio
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Contact
+          </li>
+        </Ul>
         <Name>Janne Ringdal</Name>
-        <Container>
-          <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
-          <Ul showMenu={showMenu}>
-            <li>
-              Home
-            </li>
-            <li>
-              Portfolio
-            </li>
-            <li>
-              About
-            </li>
-            <li>
-              Contact
-            </li>
-          </Ul>
-        </Container>
       </Div>
       <P>Front end developer</P>
     </nav>

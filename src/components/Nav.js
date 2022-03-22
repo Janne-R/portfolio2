@@ -82,12 +82,14 @@ const Nav = () => {
         <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
         <Ul showMenu={showMenu}>
           <li>
-            <NavLink to="/">
+            <NavLink exact to="/" style={({ isActive }) =>
+              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio">
+            <NavLink to="/portfolio" style={({ isActive }) =>
+              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
               Portfolio
             </NavLink>
           </li>
@@ -95,12 +97,14 @@ const Nav = () => {
         <Name>Janne Ringdal</Name>
         <UlSecond showMenu={showMenu}>
           <li>
-            <NavLink to="/about">
+            <NavLink to="/about" style={({ isActive }) =>
+              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">
+            <NavLink to="/contact" style={({ isActive }) =>
+              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
               Contact
             </NavLink>
           </li>

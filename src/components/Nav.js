@@ -46,10 +46,20 @@ li {
   flex-direction: row;
   position: unset;
   margin-top:0;
+  justify-content: space-between;
+  padding: 5px 10px;
   li {
   margin-bottom: 0;
 }
 }
+`;
+
+const UlSecond = styled(Ul)`
+    margin-top: 108px;
+    
+    @media ${({ theme }) => theme.devices.tabletS} { 
+      margin-top:0;
+    }
 `;
 
 
@@ -60,8 +70,6 @@ const Nav = () => {
   return (
     <nav>
       <Div>
-
-
         <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
         <Ul showMenu={showMenu}>
           <li>
@@ -70,14 +78,18 @@ const Nav = () => {
           <li>
             Portfolio
           </li>
+        </Ul>
+        <Name>Janne Ringdal</Name>
+        <UlSecond showMenu={showMenu}>
           <li>
             About
           </li>
           <li>
             Contact
           </li>
-        </Ul>
-        <Name>Janne Ringdal</Name>
+        </UlSecond>
+
+
       </Div>
       <P>Front end developer</P>
     </nav>

@@ -30,8 +30,13 @@ const BurgerMenu = styled(HiOutlineMenuAlt1)`
 `;
 
 const Ul = styled.ul`
-display: ${(props) => props.showMenu ? "block" : "none"};
+display: ${(props) => props.showMenu ? "flex" : "none"};
 list-style-type: none;
+flex-direction: column;
+padding-right: 10px;
+position: absolute;
+right:0;
+margin-top:30px;
 `;
 
 const Li = styled.li`

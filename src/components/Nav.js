@@ -47,7 +47,7 @@ li {
 
   a{
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.highlightColor};
+    color: ${({ theme }) => theme.colors.dark};
     font-family: 'Roboto', sans-serif;
   }
 }

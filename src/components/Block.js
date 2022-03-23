@@ -1,18 +1,16 @@
 import styled from "styled-components";
 import BackgroundImage from "./BackgroundImage";
-
-const Container = styled.div`
-margin:0px 10px 40px 10px;
-`;
+import BlockContainer from "./BlockContainer";
+import { HandWrittenH3 } from "../components/Handwritten";
 
 const ProjectTitle = styled.div`
-background-color: ${({ theme }) => theme.colors.dark};
+background-color: ${props => props.backgroundColor};
 width: 70%;
 margin: auto;
 margin-top: -40px;
 `;
 
-const H3 = styled.h2`
+const P = styled.p`
 text-align: center;
 color: ${({ theme }) => theme.colors.light};
 padding: 10px;
@@ -28,18 +26,24 @@ const BgImg = styled(BackgroundImage)`
 }
 `;
 
+const H3 = styled(HandWrittenH3)`
+text-align:start;
+`;
 
 const Block = (props) => {
   return (
-    <Container>
+    <BlockContainer>
       <BgImg img={props.img} height={"260px"} />
-      <ProjectTitle>
-        <H3>
+      <ProjectTitle backgroundColor={props.backgroundColor}>
+        <P>
           {props.title}
-        </H3>
+        </P>
       </ProjectTitle>
+      <H3>
+        {props.headline}
+      </H3>
       <p>{props.p} </p>
-    </Container>
+    </BlockContainer>
   );
 };
 

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { HandWrittenH2 } from "./Handwritten";
-import BackgroundImage from "./BackgroundImage";
 import StyledALink from "./StyledALink";
+import ImageWithShadow from "../components/BackgroundImageWithShadow";
+import BlockContainer from "./BlockContainer";
 
 const Block = styled.div`
 background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
@@ -21,14 +22,8 @@ padding-top: 30px;
 }
 `;
 
-const Image = styled(BackgroundImage)`
-  margin: 0px 10px 40px 10px;
+const Image = styled(ImageWithShadow)`
   transform: rotate(-3deg);
-  box-shadow: 0 3px 6px rgba(183, 123, 88);
-  
-  @media ${({ theme }) => theme.devices.mobileL} { 
-  height: 340px;
-}
 
 @media ${({ theme }) => theme.devices.tabletS} { 
   transform: rotate(0deg);
@@ -45,10 +40,6 @@ margin-top: -115px;
 margin-left: -60px;
 width: 60%;
 }
-`;
-
-const Div = styled.div`
-margin: 0px 10px 40px 10px;
 `;
 
 const FlexTablet = styled.div`
@@ -74,7 +65,7 @@ width: 50%;
 const Introduction = () => {
   return (
     <Block>
-      <Div>
+      <BlockContainer>
         <H2>Hi! I´m Janne Ringdal</H2>
         <FlexTablet>
           <ImageDiv>
@@ -107,8 +98,7 @@ const Introduction = () => {
             <Link width={"50%"}>Learn more </Link>
           </ParagraphDiv>
         </FlexTablet>
-
-      </Div>
+      </BlockContainer>
     </Block>
 
 

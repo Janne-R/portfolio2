@@ -16,6 +16,22 @@ h1, h2, h3, h4{
   font-weight: 200;
 }
 
+h1{
+  font-size: 36px;
+}
+
+h2{
+  font-size: 24px;
+}
+
+h3{
+  font-size: 21px;
+}
+
+p{  
+  font-size: 18px;
+}
+
 `
 
 export default GlobalStyle;

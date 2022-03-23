@@ -1,5 +1,11 @@
+import PortfolioIntro from "../components/PortfolioIntro";
+import AllProjects from "../components/AllProjects";
+
 const Portfolio = () => (
-  <h1>Portfolio</h1>
+  <>
+    <PortfolioIntro />
+    <AllProjects />
+  </>
 );
 
 export default Portfolio;

@@ -36,17 +36,17 @@ const KeyQualifications = () => {
       <Flex>
         <div>
           <H3>01</H3>
-          <Block title="HTML" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+          <Block backgroundColor="black" title="HTML" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
           Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/html.jpg" />
         </div>
         <div>
           <H3>02</H3>
-          <Block title="CSS" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+          <Block backgroundColor="black" title="CSS" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
           Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/css.jpg" />
         </div>
         <div>
           <H3>03</H3>
-          <Block title="JavaScript" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+          <Block backgroundColor="black" title="JavaScript" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
           Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/js.jpg" />
         </div>
       </Flex>

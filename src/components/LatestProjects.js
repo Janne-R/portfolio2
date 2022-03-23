@@ -21,11 +21,11 @@ const LatestProjects = () => {
         <H1>Latest projects</H1>
       </CenterHeadline>
       <Flex>
-        <Block title="Food Blog" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="black" title="Food Blog" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
           Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/food.jpg" />
-        <Block title="Webshop" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="black" title="Webshop" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
           Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shop.jpg" />
-        <Block title="Exam" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="black" title="Exam" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
           Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shoe.jpg" />
       </Flex>
     </>

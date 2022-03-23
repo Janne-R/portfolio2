@@ -12,10 +12,6 @@ const Grid = styled.div`
     grid-column-start: 2;
 `;
 
-const GridStart1 = styled.img`
-    grid-column-start: 1;
-`;
-
 const GridStart3 = styled.img`
     grid-column-start: 3;
 `;
@@ -35,7 +31,7 @@ const ProgrammingTools = () => {
         <HandWrittenH2>Programming tools</HandWrittenH2>
       </CenterHeadline>
       <Grid>
-        <GridStart1 src="images/GitHub_Logo.png" alt="" width="100" />
+        <GridStart2 src="images/GitHub_Logo.png" alt="" width="100" />
         <GridStart3 src="images/netlify_logo.png" alt="" width="150" />
       </Grid>
       <Grid>

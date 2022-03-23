@@ -10,13 +10,14 @@ background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
 const Link = styled(StyledALink)`
 @media ${({ theme }) => theme.devices.tabletS} { 
 width: 30%;
+margin-top: 25px;
 }
 `;
 
 const H2 = styled(HandWrittenH2)`
 @media ${({ theme }) => theme.devices.tabletS} { 
 text-align: start;
-padding-top: 60px;
+padding-top: 30px;
 }
 `;
 
@@ -26,7 +27,7 @@ const Image = styled(BackgroundImage)`
   box-shadow: 0 3px 6px rgba(183, 123, 88);
   
   @media ${({ theme }) => theme.devices.mobileL} { 
-  height: 420px;
+  height: 340px;
 }
 
 @media ${({ theme }) => theme.devices.tabletS} { 
@@ -39,9 +40,9 @@ const ImageTablet = styled(Image)`
 display: none;
 @media ${({ theme }) => theme.devices.tabletS} { 
 display: block;
-height: 280px;
+height: 210px;
 margin-top: -115px;
-margin-left: -110px;
+margin-left: -60px;
 width: 60%;
 }
 `;
@@ -54,12 +55,13 @@ const FlexTablet = styled.div`
 @media ${({ theme }) => theme.devices.tabletS} { 
 display: flex;
 flex-direction: row-reverse;
+justify-content:space-between;
 }
 `;
 
 const ImageDiv = styled.div`
 @media ${({ theme }) => theme.devices.tabletS} { 
-width: 60%;
+width: 40%;
 }
 `;
 
@@ -80,23 +82,32 @@ const Introduction = () => {
             <ImageTablet img={"images/girlComputer.jpg"} />
           </ImageDiv>
           <ParagraphDiv>
-            <p>
-              Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum.
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum.
-            </p>
-            <p>
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum.
-              Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum.
-            </p>
+            <div>
+              <p>
+                Lorem ipsum, Lorem ipsum, Lorem ipsum,
+                Lorem ipsum Lorem ipsum Lorem ipsum.
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum.
+              </p>
+              <p>
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum.
+                Lorem ipsum, Lorem ipsum, Lorem ipsum,
+                Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum.
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum.
+                Lorem ipsum, Lorem ipsum, Lorem ipsum,
+                Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
+                Lorem ipsum Lorem ipsum.
+              </p>
+            </div>
+            <Link width={"50%"}>Learn more </Link>
           </ParagraphDiv>
         </FlexTablet>
-        <Link width={"50%"}>Learn more </Link>
+
       </Div>
     </Block>
 

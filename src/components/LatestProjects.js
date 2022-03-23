@@ -7,6 +7,12 @@ const H1 = styled.h1`
 margin-top: -18px;
 `;
 
+const Flex = styled.div`
+@media ${({ theme }) => theme.devices.tabletS} { 
+  display: flex;
+}
+`;
+
 const LatestProjects = () => {
   return (
     <>
@@ -14,12 +20,14 @@ const LatestProjects = () => {
         <HandWrittenP>Some of mine</HandWrittenP>
         <H1>Latest projects</H1>
       </CenterHeadline>
-      <Block title="Food Blog" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/food.jpg" />
-      <Block title="Webshop" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shop.jpg" />
-      <Block title="Exam" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shoe.jpg" />
+      <Flex>
+        <Block title="Food Blog" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/food.jpg" />
+        <Block title="Webshop" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shop.jpg" />
+        <Block title="Exam" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shoe.jpg" />
+      </Flex>
     </>
   );
 };

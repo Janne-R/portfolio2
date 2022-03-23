@@ -18,10 +18,21 @@ color: ${({ theme }) => theme.colors.light};
 padding: 10px;
 `;
 
+const BgImg = styled(BackgroundImage)`
+@media ${({ theme }) => theme.devices.mobileL} { 
+  height: 420px;
+}
+
+@media ${({ theme }) => theme.devices.tabletS} { 
+  height: 260px;
+}
+`;
+
+
 const Block = (props) => {
   return (
     <Container>
-      <BackgroundImage img={props.img} height={"260px"} />
+      <BgImg img={props.img} height={"260px"} />
       <ProjectTitle>
         <H3>
           {props.title}

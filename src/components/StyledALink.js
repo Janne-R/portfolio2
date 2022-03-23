@@ -10,6 +10,7 @@ border: none;
 padding: 10px;
 width: ${props => props.width};
 font-size: 16px;
+margin-bottom: 25px;
 `
 
 export default A;

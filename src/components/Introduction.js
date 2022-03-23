@@ -7,11 +7,6 @@ const Block = styled.div`
 background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
 `;
 
-const H2 = styled(HandWrittenH2)`
-text-align: center;
-padding-top: 20px;
-`;
-
 const Image = styled(BackgroundImage)`
   margin: 0px 10px 40px 10px;
   transform: rotate(-3deg);
@@ -28,7 +23,7 @@ const Introduction = () => {
   return (
     <Block>
       <Div>
-        <H2>Hi! I´m Janne Ringdal</H2>
+        <HandWrittenH2>Hi! I´m Janne Ringdal</HandWrittenH2>
         <Image img={"images/girl.jpg"} height={"260px"} />
         <p>
           Lorem ipsum, Lorem ipsum, Lorem ipsum,

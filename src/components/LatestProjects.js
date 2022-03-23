@@ -7,7 +7,6 @@ const H1 = styled.h1`
 margin-top: -18px;
 `;
 
-
 const LatestProjects = () => {
   return (
     <>

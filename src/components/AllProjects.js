@@ -9,6 +9,7 @@ text-align: start;
 
 const Container = styled.div`
 background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+display: inline-block;
 `;
 
 const AllProjects = () => {

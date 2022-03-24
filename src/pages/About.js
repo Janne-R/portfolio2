@@ -1,5 +1,7 @@
+import AboutMeIntro from "../components/AboutMeIntro";
+
 const About = () => (
-  <h1>About</h1>
+  <AboutMeIntro />
 );
 
 export default About;

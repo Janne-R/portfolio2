@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HandWrittenH2 } from "./Handwritten";
 import BlockContainer from "./BlockContainer";
-import Numbers from "./Numbers";
+import NumbersGrid from "./NumbersGrid";
 import ImageWithShadow from "../components/BackgroundImageWithShadow";
 
 const Container = styled.div`
@@ -15,18 +15,6 @@ const Container = styled.div`
 const H2 = styled(HandWrittenH2)`
 text-align: start;
 `;
-
-const Grid = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    margin-bottom: 25px;
-
-`;
-
-const P = styled.p`
-    margin-top: 0;
-`;
-
 
 const Image = styled(ImageWithShadow)`
   height: 360px;
@@ -51,27 +39,15 @@ const Education = () => {
       <Flex>
         <div>
           <H2>Education</H2>
-          <Grid>
-            <Numbers>01</Numbers>
-            <P>Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum
-            </P>
-          </Grid>
-          <Grid>
-            <Numbers>02</Numbers>
-            <P>Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum
-            </P>
-          </Grid>
-          <Grid>
-            <Numbers>03</Numbers>
-            <P>Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum
-            </P>
-          </Grid>
+          <NumbersGrid number="01" p="Lorem ipsum, Lorem ipsum, Lorem ipsum, 
+          Lorem ipsum Lorem ipsum Lorem ipsum,
+          Lorem ipsum Lorem ipsum Lorem ipsum  "/>
+          <NumbersGrid number="02" p="Lorem ipsum, Lorem ipsum, Lorem ipsum, 
+          Lorem ipsum Lorem ipsum Lorem ipsum,
+          Lorem ipsum Lorem ipsum Lorem ipsum  "/>
+          <NumbersGrid number="03" p="Lorem ipsum, Lorem ipsum, Lorem ipsum, 
+          Lorem ipsum Lorem ipsum Lorem ipsum,
+          Lorem ipsum Lorem ipsum Lorem ipsum  "/>
         </div>
         <Image img="images/design.jpg" height="260px" />
       </Flex>

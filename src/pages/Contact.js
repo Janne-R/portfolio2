@@ -1,7 +1,11 @@
 import ContactInfo from "../components/ContactInfo";
+import ContactForm from "../components/ContactForm.js";
 
 const Contact = () => (
-  <ContactInfo />
+  <>
+    <ContactInfo />
+    <ContactForm />
+  </>
 );
 
 export default Contact;

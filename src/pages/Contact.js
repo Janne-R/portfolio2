@@ -1,5 +1,7 @@
+import ContactInfo from "../components/ContactInfo";
+
 const Contact = () => (
-  <h1>Contact</h1>
+  <ContactInfo />
 );
 
 export default Contact;

@@ -6,6 +6,7 @@ const Div = styled.div`
 background-color: ${({ theme }) => theme.colors.dark};
 color: ${({ theme }) => theme.colors.light};
 text-align: center;
+display: inline-block;
 `;
 
 const H2 = styled.h2`

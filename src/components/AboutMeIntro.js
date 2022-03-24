@@ -23,6 +23,7 @@ width: 45%;
 `;
 
 const Container = styled.div`
+
 @media ${({ theme }) => theme.devices.tabletS} { 
   display: flex;
   justify-content: space-between;
@@ -41,10 +42,12 @@ width: 45%;
 
 const DivALinks = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+margin-top: 40px;
 
 @media ${({ theme }) => theme.devices.tabletS} { 
   justify-content: flex-end;
+  
 }
 
 @media ${({ theme }) => theme.devices.laptopS} { 

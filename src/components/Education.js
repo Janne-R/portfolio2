@@ -6,6 +6,7 @@ import ImageWithShadow from "../components/BackgroundImageWithShadow";
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+  padding-bottom: 25px;
 
 @media ${({ theme }) => theme.devices.laptopS} { 
   margin-top: 125px;
@@ -23,6 +24,10 @@ const Image = styled(ImageWithShadow)`
   width: 80%;
   height: 460px;
   margin-top: -30px;
+}
+
+@media ${({ theme }) => theme.devices.laptopS} { 
+  width: 60%;
 }
 `;
 

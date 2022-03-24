@@ -32,31 +32,36 @@ const Image = styled(ImageWithShadow)`
 `;
 
 const ImageTablet = styled(Image)`
-display: none;
+  display: none;
+
 @media ${({ theme }) => theme.devices.tabletS} { 
-display: block;
-height: 210px;
-margin-top: -115px;
-margin-left: -60px;
-width: 60%;
+  display: block;
+  height: 210px;
+  margin-top: -115px;
+  margin-left: -60px;
+  width: 60%;
 }
 `;
 
 const FlexTablet = styled.div`
+
 @media ${({ theme }) => theme.devices.tabletS} { 
-display: flex;
-flex-direction: row-reverse;
-justify-content:space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
 }
 `;
 
 const ImageDiv = styled.div`
+
 @media ${({ theme }) => theme.devices.tabletS} { 
-width: 40%;
+
+  width: 40%;
 }
 `;
 
 const ParagraphDiv = styled.div`
+
 @media ${({ theme }) => theme.devices.tabletS} { 
 width: 50%;
 }

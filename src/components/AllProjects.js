@@ -9,7 +9,14 @@ text-align: start;
 
 const Container = styled.div`
 background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
-display: inline-block;
+padding-bottom: 1px;
+`;
+
+const Grid = styled.div`
+@media ${({ theme }) => theme.devices.tabletS} { 
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 `;
 
 const AllProjects = () => {
@@ -20,17 +27,18 @@ const AllProjects = () => {
           All Projects
         </H2>
       </BlockContainer>
-      <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+      <Grid>
+        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
     Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-      <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
     Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-      <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
     Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-      <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
     Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-      <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
     Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-
+      </Grid>
     </Container>
 
   );

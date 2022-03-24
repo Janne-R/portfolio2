@@ -15,12 +15,24 @@ const H2 = styled.h2`
 
 const Link = styled(StyledALink)`
 width: 50%;
+
+@media ${({ theme }) => theme.devices.tabletS} { 
+width: 20%
+}
+`;
+
+const Container = styled(BlockContainer)`
+@media ${({ theme }) => theme.devices.tabletS} { 
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 `;
 
 const GitHub = () => {
   return (
     <Div>
-      <BlockContainer>
+      <Container>
         <H2>
           GitHub Account
         </H2>
@@ -28,7 +40,7 @@ const GitHub = () => {
           Lorem ipsum, lorem ipusm. Lorem ipusn, lorem ipusm,
           Lorem ipsum, Lorem ipusm.</p>
         <Link>Github</Link>
-      </BlockContainer>
+      </Container>
     </Div>
   );
 };

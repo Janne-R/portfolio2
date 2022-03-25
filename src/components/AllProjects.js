@@ -26,19 +26,20 @@ const AllProjects = () => {
         <H2>
           All Projects
         </H2>
+
+        <Grid>
+          <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+          <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+          <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+          <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+          <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+        </Grid>
       </BlockContainer>
-      <Grid>
-        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-        <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
-      </Grid>
     </Container>
 
   );

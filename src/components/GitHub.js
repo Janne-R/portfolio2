@@ -6,7 +6,6 @@ const Div = styled.div`
 background-color: ${({ theme }) => theme.colors.dark};
 color: ${({ theme }) => theme.colors.light};
 text-align: center;
-display: inline-block;
 `;
 
 const H2 = styled.h2`
@@ -22,18 +21,12 @@ width: 20%
 }
 `;
 
-const Container = styled(BlockContainer)`
-@media ${({ theme }) => theme.devices.tabletS} { 
-  max-width: 50%;
-  margin: 0 auto;
-}
 
-`;
 
 const GitHub = () => {
   return (
     <Div>
-      <Container>
+      <BlockContainer>
         <H2>
           GitHub Account
         </H2>
@@ -41,7 +34,7 @@ const GitHub = () => {
           Lorem ipsum, lorem ipusm. Lorem ipusn, lorem ipusm,
           Lorem ipsum, Lorem ipusm.</p>
         <Link>Github</Link>
-      </Container>
+      </BlockContainer>
     </Div>
   );
 };

@@ -56,8 +56,18 @@ margin-top: 40px;
 }
 `;
 
-const ALinks = styled(StyledALink)`
+const ALinks = styled(NavLink)`
 width: 40%;
+display: inline-block;
+text-decoration: none;
+text-align: center;
+background-color: ${({ theme }) => theme.colors.ctaColor};
+color: ${({ theme }) => theme.colors.light};
+border: none;
+padding: 10px;
+width: ${props => props.width};
+font-size: 16px;
+margin-bottom: 25px;
 
 @media ${({ theme }) => theme.devices.tabletS} { 
 width: 20%;
@@ -113,10 +123,10 @@ const AboutMeIntro = () => {
           </DivText>
         </Container>
         <DivALinks>
-          <ALinks>
+          <ALinks to="/contact" >
             Contact
           </ALinks>
-          <ALinks>
+          <ALinks to="/portfolio" >
             Portfolio
           </ALinks>
         </DivALinks>

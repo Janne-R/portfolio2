@@ -33,7 +33,7 @@ const GitHub = () => {
         <p>Lorem ipusn, lorem ipusm, Lorem ipsum, Lorem ipusm.
           Lorem ipsum, lorem ipusm. Lorem ipusn, lorem ipusm,
           Lorem ipsum, Lorem ipusm.</p>
-        <Link>Github</Link>
+        <Link href="https://github.com/Janne-R">Github</Link>
       </BlockContainer>
     </Div>
   );

@@ -74,8 +74,8 @@ const Introduction = () => {
         <H2>Hi! I´m Janne Ringdal</H2>
         <FlexTablet>
           <ImageDiv>
-            <Image img={"images/girl.jpg"} height={"260px"} />
-            <ImageTablet img={"images/girlComputer.jpg"} />
+            <Image img={"images/girlResize.png"} height={"260px"} />
+            <ImageTablet img={"images/girlComputerResize.png"} />
           </ImageDiv>
           <ParagraphDiv>
             <div>

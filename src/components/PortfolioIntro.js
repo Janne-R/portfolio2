@@ -42,7 +42,7 @@ const PortfolioIntro = () => {
       <BlockContainer>
         <Container>
 
-          <Image img="images/working.jpg" height="260px" />
+          <Image img="images/workingResize.png" height="260px" />
 
           <DivText>
             <H1>

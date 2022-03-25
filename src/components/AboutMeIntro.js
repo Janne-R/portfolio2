@@ -92,7 +92,7 @@ const AboutMeIntro = () => {
       <BlockContainer>
         <Container>
 
-          <Image img="images/girl2.jpg" height="260px" />
+          <Image img="images/girl2Resize.png" height="260px" />
           <ImageTablet img={"images/quote1.png"} />
 
           <DivText>

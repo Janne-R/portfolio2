@@ -29,15 +29,15 @@ const AllProjects = () => {
 
         <Grid>
           <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/designResize.png" />
           <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/designResize.png" />
           <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/designResize.png" />
           <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/designResize.png" />
           <Block backgroundColor="#B77B58" title="Link" headline="Headline project name" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/design.jpg" />
+    Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/designResize.png" />
         </Grid>
       </BlockContainer>
     </Container>

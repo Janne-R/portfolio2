@@ -55,7 +55,7 @@ const Education = () => {
           Lorem ipsum Lorem ipsum Lorem ipsum,
           Lorem ipsum Lorem ipsum Lorem ipsum  "/>
         </div>
-        <Image img="images/design.jpg" height="260px" />
+        <Image img="images/designResize.png" height="260px" />
       </Flex>
     </Container>
   );

@@ -24,11 +24,11 @@ const LatestProjects = () => {
         </CenterHeadline>
         <Flex>
           <Block backgroundColor="black" title="Food Blog" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/food.jpg" />
+          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/foodResize.png" />
           <Block backgroundColor="black" title="Webshop" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shop.jpg" />
+          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shopResize.png" />
           <Block backgroundColor="black" title="Exam" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shoe.jpg" />
+          Lorem ipusm. Lorem ipsum, lorem ipusm. " img="images/shoeResize.png" />
         </Flex>
       </BlockContainer>
     </>

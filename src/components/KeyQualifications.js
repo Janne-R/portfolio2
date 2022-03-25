@@ -35,17 +35,17 @@ const KeyQualifications = () => {
           <div>
             <Number>01</Number>
             <Block backgroundColor="black" title="HTML" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/html.jpg" />
+          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/htmlResize.png" />
           </div>
           <div>
             <Number>02</Number>
             <Block backgroundColor="black" title="CSS" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/css.jpg" />
+          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/cssResize.png" />
           </div>
           <div>
             <Number>03</Number>
             <Block backgroundColor="black" title="JavaScript" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/js.jpg" />
+          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/jsResize.png" />
           </div>
         </Flex>
       </BlockContainer>

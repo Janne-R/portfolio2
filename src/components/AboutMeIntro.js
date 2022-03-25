@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { HandWrittenH1 } from "../components/Handwritten";
 import ImageWithShadow from "../components/BackgroundImageWithShadow";
 import BlockContainer from "./BlockContainer";
-import StyledALink from "./StyledALink"; // SKJEKK DENNE!
 import { NavLink } from "react-router-dom";
 
 const Container = styled.div`

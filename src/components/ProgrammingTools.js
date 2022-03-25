@@ -4,30 +4,29 @@ import CenterHeadline from "../components/CenterHeadline";
 import BlockContainer from "./BlockContainer";
 
 const Div = styled.div`
-background-color: ${({ theme }) => theme.colors.ctaColor};
+  background-color: ${({ theme }) => theme.colors.ctaColor};
 `;
 
 const Grid = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
-    grid-column-start: 2;
-`;
-
-const GridStart3 = styled.img`
-    grid-column-start: 3;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  grid-column-start: 2;
 `;
 
 const GridStart2 = styled.img`
-    grid-column-start: 2;
+  grid-column-start: 2;
+`;
+
+const GridStart3 = styled.img`
+  grid-column-start: 3;
 `;
 
 const GridStart4 = styled.img`
-    grid-column-start: 4;
+  grid-column-start: 4;
 `;
 
 const ProgrammingTools = () => {
   return (
-
     <Div>
       <BlockContainer>
         <CenterHeadline>
@@ -42,8 +41,7 @@ const ProgrammingTools = () => {
           <GridStart4 src="images/vscode.png" alt="" width="80" />
         </Grid>
       </BlockContainer>
-    </Div >
-
+    </Div>
 
   );
 };

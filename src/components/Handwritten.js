@@ -10,7 +10,6 @@ export const HandWrittenH3 = styled.h3`
   text-align: center;
 `;
 
-
 export const HandWrittenH2 = styled.h2`
   font-family: 'Kalam', cursive;
   padding-top: 20px;

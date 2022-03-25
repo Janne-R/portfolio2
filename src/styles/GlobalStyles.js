@@ -31,7 +31,5 @@ h3{
 p{  
   font-size: 18px;
 }
-
 `
-
 export default GlobalStyle;

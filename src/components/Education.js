@@ -7,36 +7,32 @@ import ImageWithShadow from "../components/BackgroundImageWithShadow";
 const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
   padding-bottom: 25px;
+  @media ${({ theme }) => theme.devices.laptopS} { 
+    margin-top: 125px;
+  }
+`;
 
-@media ${({ theme }) => theme.devices.laptopS} { 
-  margin-top: 125px;
-}
+const Flex = styled(BlockContainer)`
+  @media ${({ theme }) => theme.devices.tabletS} { 
+    display: flex;
+  }
 `;
 
 const H2 = styled(HandWrittenH2)`
-text-align: start;
+  text-align: start;
 `;
 
 const Image = styled(ImageWithShadow)`
   height: 360px;
-
   @media ${({ theme }) => theme.devices.tabletS} { 
-  width: 80%;
-  height: 460px;
-  margin-top: -30px;
-}
-
-@media ${({ theme }) => theme.devices.laptopS} { 
-  width: 60%;
-  margin-left: 10px;
-}
-`;
-
-const Flex = styled(BlockContainer)`
-
-@media ${({ theme }) => theme.devices.tabletS} { 
-  display: flex;
-}
+    width: 80%;
+    height: 460px;
+    margin-top: -30px;
+  }
+  @media ${({ theme }) => theme.devices.laptopS} { 
+    width: 60%;
+    margin-left: 10px;
+  }
 `;
 
 const Education = () => {

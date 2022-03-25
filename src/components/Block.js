@@ -3,36 +3,35 @@ import BackgroundImage from "./BackgroundImage";
 import BlockContainer from "./BlockContainer";
 import { HandWrittenH3 } from "../components/Handwritten";
 
-const ProjectTitle = styled.div`
-background-color: ${props => props.backgroundColor};
-width: 70%;
-margin: auto;
-margin-top: -40px;
-`;
-
-const P = styled.p`
-text-align: center;
-color: ${({ theme }) => theme.colors.light};
-padding: 10px;
+const A = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.dark};
 `;
 
 const BgImg = styled(BackgroundImage)`
-@media ${({ theme }) => theme.devices.mobileL} { 
-  height: 420px;
-}
+  @media ${({ theme }) => theme.devices.mobileL} { 
+    height: 420px;
+  }
+  @media ${({ theme }) => theme.devices.tabletS} { 
+    height: 260px;
+  }
+`;
 
-@media ${({ theme }) => theme.devices.tabletS} { 
-  height: 260px;
-}
+const ProjectTitle = styled.div`
+  background-color: ${props => props.backgroundColor};
+  width: 70%;
+  margin: auto;
+  margin-top: -40px;
+`;
+
+const P = styled.p`
+  text-align: center;
+  color: ${({ theme }) => theme.colors.light};
+  padding: 10px;
 `;
 
 const H3 = styled(HandWrittenH3)`
-text-align:start;
-`;
-
-const A = styled.a`
-text-decoration: none;
-color: ${({ theme }) => theme.colors.dark};
+  text-align:start;
 `;
 
 const Block = (props) => {

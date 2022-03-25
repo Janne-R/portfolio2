@@ -3,25 +3,23 @@ import StyledALink from "./StyledALink";
 import BlockContainer from "./BlockContainer";
 
 const Div = styled.div`
-background-color: ${({ theme }) => theme.colors.dark};
-color: ${({ theme }) => theme.colors.light};
-text-align: center;
+  background-color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.colors.light};
+  text-align: center;
 `;
 
 const H2 = styled.h2`
-    margin-top: 0;
-    padding-top: 20px;
+  margin-top: 0;
+  padding-top: 20px;
 `;
 
 const Link = styled(StyledALink)`
-width: 50%;
+  width: 50%;
 
 @media ${({ theme }) => theme.devices.tabletS} { 
-width: 20%
+  width: 20%
 }
 `;
-
-
 
 const GitHub = () => {
   return (

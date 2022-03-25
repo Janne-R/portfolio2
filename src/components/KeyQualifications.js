@@ -6,21 +6,20 @@ import Numbers from "./Numbers";
 import BlockContainer from "./BlockContainer";
 
 const H2 = styled.h2`
-margin-top: -18px;
+  margin-top: -18px;
 `;
 
 const Flex = styled.div`
-@media ${({ theme }) => theme.devices.tabletS} { 
-  display: flex;
-}
+  @media ${({ theme }) => theme.devices.tabletS} { 
+    display: flex;
+  }
 `;
 
 const Number = styled(Numbers)`
-display: none;
-
-@media ${({ theme }) => theme.devices.tabletS} { 
-  display: block;
-}
+  display: none;
+  @media ${({ theme }) => theme.devices.tabletS} { 
+    display: block;
+  }
 `;
 
 const KeyQualifications = () => {

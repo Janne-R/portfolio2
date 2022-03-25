@@ -12,7 +12,7 @@ width: 80%
   }
 
   @media ${({ theme }) => theme.devices.laptopS} { 
-width: 60%
+width: 70%
   }
 `;
 
@@ -45,6 +45,19 @@ background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
 padding-bottom: 10px;
 `;
 
+const DotGrid = styled.div`
+display: none;
+@media ${({ theme }) => theme.devices.tabletS} { 
+display: grid;
+    justify-items: start;
+    align-content: stretch;
+    justify-content: end;
+    align-items: end;
+    margin-top: -624px;
+    grid-template-rows: 1fr 3fr 2fr 3fr 1fr;
+}
+`;
+
 const ContactForm = () => {
   return (
     <Div>
@@ -68,7 +81,9 @@ const ContactForm = () => {
           <Button>Submit</Button>
         </form>
       </BlockContainer>
-
+      <DotGrid>
+        <Dots />
+      </DotGrid>
     </Div>
 
   );

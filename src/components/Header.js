@@ -27,7 +27,7 @@ const HeroImg = styled(BackgroundImage)`
     `;
 
 const Header = () => (
-  <HeroImg img={"images/header.jpg"} height={"260px"} />
+  <HeroImg img={"images/headerNew.png"} height={"260px"} />
 );
 
 export default Header;

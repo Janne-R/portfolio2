@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BlockContainer from "./BlockContainer";
 import Button from "./Button";
 import { HandWrittenH2 } from "../components/Handwritten";
+import Dots from "./Dots";
 
 const Flex = styled.div`
 display: flex;
@@ -39,29 +40,35 @@ padding: 10px;
 margin-bottom: 30px;
 `;
 
+const Div = styled.div`
+background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+`;
 
 const ContactForm = () => {
   return (
-    <BlockContainer>
-      <H2>Contact form</H2>
-      <form action="">
-        <Flex>
-          <Label for="name">Name</Label>
-          <Input type="text" id="name" name="Name" placeholder="Full name" />
+    <Div>
+      <BlockContainer>
+        <H2>Contact form</H2>
+        <form action="">
+          <Flex>
+            <Label for="name">Name</Label>
+            <Input type="text" id="name" name="Name" placeholder="Full name" />
 
-          <Label for="email">Email</Label>
-          <Input type="email" id="email" name="email" placeholder="example@mail.com" />
+            <Label for="email">Email</Label>
+            <Input type="email" id="email" name="email" placeholder="example@mail.com" />
 
-          <Label for="phone">Phone</Label>
-          <Input type="tel" id="phone" name="phone" placeholder="xxx xx xxx" />
+            <Label for="phone">Phone</Label>
+            <Input type="tel" id="phone" name="phone" placeholder="xxx xx xxx" />
 
-          <Label for="message">Message </Label>
-          <Textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></Textarea>
+            <Label for="message">Message </Label>
+            <Textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></Textarea>
 
-        </Flex>
-        <Button>Submit</Button>
-      </form>
-    </BlockContainer>
+          </Flex>
+          <Button>Submit</Button>
+        </form>
+        <Dots />
+      </BlockContainer>
+    </Div>
 
   );
 };

@@ -42,6 +42,7 @@ margin-bottom: 30px;
 
 const Div = styled.div`
 background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+padding-bottom: 10px;
 `;
 
 const ContactForm = () => {
@@ -66,8 +67,8 @@ const ContactForm = () => {
           </Flex>
           <Button>Submit</Button>
         </form>
-        <Dots />
       </BlockContainer>
+
     </Div>
 
   );

@@ -26,6 +26,9 @@ const colors = {
   light: "#FFFFFF"
 };
 
-export default {
+
+const theme = {
   sizes, devices, colors
 };
+
+export default theme;

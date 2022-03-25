@@ -28,6 +28,7 @@ const Image = styled(ImageWithShadow)`
 
 @media ${({ theme }) => theme.devices.laptopS} { 
   width: 60%;
+  margin-left: 10px;
 }
 `;
 

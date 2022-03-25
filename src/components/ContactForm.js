@@ -80,10 +80,11 @@ const ContactForm = () => {
           </Flex>
           <Button>Submit</Button>
         </form>
+
+        <DotGrid>
+          <Dots />
+        </DotGrid>
       </BlockContainer>
-      <DotGrid>
-        <Dots />
-      </DotGrid>
     </Div>
 
   );

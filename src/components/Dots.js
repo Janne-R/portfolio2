@@ -31,7 +31,7 @@ const Grid = styled.div`
     }
     
     @media ${({ theme }) => theme.devices.laptopS} { 
-    grid-template-columns: 8fr 4fr 3fr 1fr;
+    grid-template-columns: 6fr 4fr 3fr 1fr;
     grid-column-start: 2;
     }
 `;

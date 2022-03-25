@@ -63,10 +63,10 @@ const ContactForm = () => {
     <Div>
       <BlockContainer>
         <H2>Contact form</H2>
-        <form action="">
+        <form action="https://formsubmit.co/janneringdal@gmail.com" method="POST">
           <Flex>
             <Label for="name">Name</Label>
-            <Input type="text" id="name" name="Name" placeholder="Full name" />
+            <Input type="text" id="name" name="Name" placeholder="Full name" required />
 
             <Label for="email">Email</Label>
             <Input type="email" id="email" name="email" placeholder="example@mail.com" />
@@ -75,10 +75,10 @@ const ContactForm = () => {
             <Input type="tel" id="phone" name="phone" placeholder="xxx xx xxx" />
 
             <Label for="message">Message </Label>
-            <Textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></Textarea>
+            <Textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></Textarea>
 
           </Flex>
-          <Button>Submit</Button>
+          <Button type="submit">Submit</Button>
         </form>
 
         <DotGrid>

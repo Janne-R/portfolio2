@@ -22,7 +22,7 @@ const Flex = styled.div`
 
 const Image = styled.img`
 @media ${({ theme }) => theme.devices.tabletS} { 
-  width: 45%;
+  width: 65%;
     align-self: self-end;
 }
 `;
@@ -33,6 +33,18 @@ width: 45%;
 }
 `;
 
+const Phone = styled(AiFillPhone)`
+margin-right: 20px;
+`;
+
+const Email = styled(MdEmail)`
+margin-right: 20px;
+`;
+
+const Map = styled(FaMapMarker)`
+margin-right: 20px;
+`;
+
 const ContactInfo = () => {
   return (
     <>
@@ -41,9 +53,9 @@ const ContactInfo = () => {
           <Image src="images/contact.svg" height="260px" width="100%" />
           <Div>
             <H1>Contact info</H1>
-            <NumbersGrid number=<AiFillPhone /> p=" +47 412 09 616"/>
-            <NumbersGrid number=<MdEmail /> p=" janneringdal@gmail.com"/>
-            <NumbersGrid number=<FaMapMarker /> p=" Rådalslien 9,
+            <NumbersGrid number=<Phone /> p=" +47 412 09 616"/>
+            <NumbersGrid number=<Email /> p=" janneringdal@gmail.com"/>
+            <NumbersGrid number=<Map /> p=" Rådalslien 9,
             5239 Bergen, Norway."/>
           </Div>
         </Flex>

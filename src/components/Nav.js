@@ -4,8 +4,13 @@ import styled from "styled-components";
 import { HandWrittenP } from "./Handwritten";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
+const BackgroundColor = styled.div`
+background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+`;
+
 const Div = styled.div`
-  background-color: ${({ theme }) => theme.colors.secondaryBackgroundColor};
+  max-width: 1200px;
+  margin: 0 auto;
   height: 32px;
   display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -80,39 +85,46 @@ const Nav = () => {
 
   return (
     <nav>
-      <Div>
-        <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
-        <Ul showMenu={showMenu}>
-          <li>
-            <NavLink exact to="/" style={({ isActive }) =>
-              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/portfolio" style={({ isActive }) =>
-              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
-              Portfolio
-            </NavLink>
-          </li>
-        </Ul>
-        <Name>Janne Ringdal</Name>
-        <UlSecond showMenu={showMenu}>
-          <li>
-            <NavLink to="/about" style={({ isActive }) =>
-              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" style={({ isActive }) =>
-              (isActive ? { color: '#B77B58' } : { color: 'black' })}>
-              Contact
-            </NavLink>
-          </li>
-        </UlSecond>
-      </Div>
+      <BackgroundColor>
+
+        <Div>
+
+          <BurgerMenu size="2rem" onClick={() => setShowMenu(!showMenu)} />
+
+          <Ul showMenu={showMenu}>
+            <li>
+              <NavLink exact to="/" style={({ isActive }) =>
+                (isActive ? { color: '#B77B58' } : { color: 'black' })}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/portfolio" style={({ isActive }) =>
+                (isActive ? { color: '#B77B58' } : { color: 'black' })}>
+                Portfolio
+              </NavLink>
+            </li>
+          </Ul>
+          <Name>Janne Ringdal</Name>
+          <UlSecond showMenu={showMenu}>
+            <li>
+              <NavLink to="/about" style={({ isActive }) =>
+                (isActive ? { color: '#B77B58' } : { color: 'black' })}>
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" style={({ isActive }) =>
+                (isActive ? { color: '#B77B58' } : { color: 'black' })}>
+                Contact
+              </NavLink>
+            </li>
+          </UlSecond>
+
+        </Div>
+      </BackgroundColor>
       <P>Front end developer</P>
+
     </nav>
   );
 };

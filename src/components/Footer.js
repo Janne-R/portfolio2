@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { HandWrittenH3, HandWrittenP } from "./Handwritten";
+import BlockContainer from "./BlockContainer";
 
 const Div = styled.div`
 background-color: #E4E4E4;
@@ -64,44 +65,46 @@ const Footer = () => {
   return (
     <>
       <Div>
-        <Ul>
-          <div>
-            <Title>Navigation</Title>
-            <li>
-              <NavLink exact to="/" >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/portfolio" >
-                Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" >
-                Contact
-              </NavLink>
-            </li>
-          </div>
-          <TabletDiv>
-            <Name>Janne Ringdal</Name>
-            <P>Front end developer</P>
-          </TabletDiv>
-          <div>
-            <Title>Links</Title>
-            <li>
-              <a href="http://www.linkedin.com/in/janneringdal">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://github.com/Janne-R">GitHub</a>
-            </li>
-          </div>
-        </Ul>
+        <BlockContainer>
+          <Ul>
+            <div>
+              <Title>Navigation</Title>
+              <li>
+                <NavLink exact to="/" >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/portfolio" >
+                  Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact" >
+                  Contact
+                </NavLink>
+              </li>
+            </div>
+            <TabletDiv>
+              <Name>Janne Ringdal</Name>
+              <P>Front end developer</P>
+            </TabletDiv>
+            <div>
+              <Title>Links</Title>
+              <li>
+                <a href="http://www.linkedin.com/in/janneringdal">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/Janne-R">GitHub</a>
+              </li>
+            </div>
+          </Ul>
+        </BlockContainer>
       </Div>
       <CopyRight>Copyright ©Janne Ringdal</CopyRight>
     </>

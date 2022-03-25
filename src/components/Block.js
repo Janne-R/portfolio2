@@ -30,20 +30,27 @@ const H3 = styled(HandWrittenH3)`
 text-align:start;
 `;
 
+const A = styled.a`
+text-decoration: none;
+color: ${({ theme }) => theme.colors.dark};
+`;
+
 const Block = (props) => {
   return (
-    <BlockContainer>
-      <BgImg img={props.img} height={"260px"} />
-      <ProjectTitle backgroundColor={props.backgroundColor}>
-        <P>
-          {props.title}
-        </P>
-      </ProjectTitle>
-      <H3>
-        {props.headline}
-      </H3>
-      <p>{props.p} </p>
-    </BlockContainer>
+    <A href={props.href}>
+      <BlockContainer>
+        <BgImg img={props.img} height={"260px"} />
+        <ProjectTitle backgroundColor={props.backgroundColor}>
+          <P>
+            {props.title}
+          </P>
+        </ProjectTitle>
+        <H3>
+          {props.headline}
+        </H3>
+        <p>{props.p} </p>
+      </BlockContainer>
+    </A>
   );
 };
 

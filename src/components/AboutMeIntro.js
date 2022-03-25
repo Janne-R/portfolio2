@@ -3,6 +3,7 @@ import { HandWrittenH1 } from "../components/Handwritten";
 import ImageWithShadow from "../components/BackgroundImageWithShadow";
 import BlockContainer from "./BlockContainer";
 import StyledALink from "./StyledALink";
+import { NavLink } from "react-router-dom";
 
 const H1 = styled(HandWrittenH1)`
 text-align: start;
@@ -125,3 +126,4 @@ const AboutMeIntro = () => {
 };
 
 export default AboutMeIntro;
+

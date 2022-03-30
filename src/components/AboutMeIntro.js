@@ -97,13 +97,11 @@ const AboutMeIntro = () => {
               About me
             </H1>
             <p>
-              Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+              My name is Janne Ringdal and I am currently study front-end development at Noroff, school of technology and
+              digital media. I am scheduled to graduate in October 2022.
               <p>
-                Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem
-                ipsumLorem ipsumvvLorem ipsumLorem ipsumLorem
-                ipsumLorem ipsumLorem ipsumvv.
+                I like working with creative solutions, and creating websites that are user-friendly, SEO optimized with web technologies like HTML, CSS and JavaScript.
+
               </p>
             </p>
           </DivText>

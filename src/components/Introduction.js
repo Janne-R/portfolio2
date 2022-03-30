@@ -74,24 +74,11 @@ const Introduction = () => {
           <ParagraphDiv>
             <div>
               <p>
-                Lorem ipsum, Lorem ipsum, Lorem ipsum,
-                Lorem ipsum Lorem ipsum Lorem ipsum.
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum.
+                I am currently study front-end development at Noroff, school of technology and digital media. I am scheduled to graduate in October 2022.
               </p>
               <p>
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum.
-                Lorem ipsum, Lorem ipsum, Lorem ipsum,
-                Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum.
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum.
-                Lorem ipsum, Lorem ipsum, Lorem ipsum,
-                Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum,
-                Lorem ipsum Lorem ipsum.
+
+                I already have a bachelor's degree in marketing and have worked with sales and marketing for over 15 years. I have had various roles within this field, my most recent work was as a sales and marketing manager. I think the combination of digital marketing and front end programming gives me the opportunity to identify and solve problems related to both web development and usability.
               </p>
             </div>
             <Link width={"50%"}>Learn more </Link>

@@ -28,10 +28,8 @@ const GitHub = () => {
         <H2>
           GitHub Account
         </H2>
-        <p>Lorem ipusn, lorem ipusm, Lorem ipsum, Lorem ipusm.
-          Lorem ipsum, lorem ipusm. Lorem ipusn, lorem ipusm,
-          Lorem ipsum, Lorem ipusm.</p>
-        <Link href="https://github.com/Janne-R">Github</Link>
+        <p>Take a look at all my code on GitHub.</p>
+        <Link href="https://github.com/Janne-R">GitHub</Link>
       </BlockContainer>
     </Div>
   );

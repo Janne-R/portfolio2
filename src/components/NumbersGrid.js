@@ -9,13 +9,17 @@ const Grid = styled.div`
 
 const P = styled.p`
   margin-top: 0;
+  margin-bottom: 5px;
 `;
 
 const NumbersGrid = (props) => {
   return (
     <Grid>
       <Numbers>{props.number}</Numbers>
-      <P>{props.p}</P>
+      <div>
+        <P>{props.p}</P>
+        <P>{props.p2}</P>
+      </div>
     </Grid>
   );
 };

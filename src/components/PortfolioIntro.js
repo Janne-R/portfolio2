@@ -43,13 +43,9 @@ const PortfolioIntro = () => {
               Portfolio
             </H1>
             <p>
-              Lorem ipsum, Lorem ipsum, Lorem ipsum,
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+              This is my collection of all the projects I have done during my studies at Noroff.
               <p>
-                Lorem ipsum Lorem ipsum Lorem ipsum, Lorem ipsum Lorem ipsum
-                Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem
-                ipsumLorem ipsumvvLorem ipsumLorem ipsumLorem
-                ipsumLorem ipsumLorem ipsumvv.
+                All sites are deployd on Netlify and Github.
               </p>
             </p>
           </DivText>

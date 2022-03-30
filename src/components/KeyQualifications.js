@@ -12,6 +12,10 @@ const H2 = styled.h2`
 const Flex = styled.div`
   @media ${({ theme }) => theme.devices.tabletS} { 
     display: flex;
+    > *{
+      flex-basis: 0;
+      flex-grow: 1;
+    }
   }
 `;
 
@@ -33,18 +37,15 @@ const KeyQualifications = () => {
         <Flex>
           <div>
             <Number>01</Number>
-            <Block backgroundColor="black" title="HTML" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/htmlResize.png" />
+            <Block backgroundColor="black" title="HTML" p="Good HTML knowledge with focus on semantic markup and SEO optimization." img="images/htmlResize.png" />
           </div>
           <div>
             <Number>02</Number>
-            <Block backgroundColor="black" title="CSS" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/cssResize.png" />
+            <Block backgroundColor="black" title="CSS" p="Good CSS knowledge and creating cross browser CSS designs. Implementing style standards and guides. Basic knowledge in CSS frameworks like Bootstrap, Sass and Tailwind. More advanced knowlede in Styled Components." img="images/cssResize.png" />
           </div>
           <div>
             <Number>03</Number>
-            <Block backgroundColor="black" title="JavaScript" p="Lorem ipusn, lorem ipusm, Lorem ipsum 
-          Lorem ipusm. Lorem ipsum, lorem ipusm." img="images/jsResize.png" />
+            <Block backgroundColor="black" title="JavaScript" p="Basic javaScript knowledge. Can design, build, and maintain web sites, using React.js." img="images/jsResize.png" />
           </div>
         </Flex>
       </BlockContainer>

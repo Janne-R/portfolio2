@@ -41,11 +41,9 @@ const Education = () => {
       <Flex>
         <div>
           <H2>Education</H2>
-          <NumbersGrid number="01" p="School: Kristiania University College - 2008-2011." p2="Degree: Bachelor - Marketing and Advertising." />
-          <NumbersGrid number="02" p="School: High school - 2002-2005." p2="Field of study: general subject and marketing. " />
-          <NumbersGrid number="03" p="Lorem ipsum, Lorem ipsum, Lorem ipsum, 
-          Lorem ipsum Lorem ipsum Lorem ipsum,
-          Lorem ipsum Lorem ipsum Lorem ipsum  "/>
+          <NumbersGrid number="01" p="School: Noroff - 2020-2022." p2="Degree: 	Higher Professional Degree - Front-end Development." />
+          <NumbersGrid number="02" p="School: Kristiania University College - 2008-2011." p2="Degree: Bachelor - Marketing and Advertising." />
+          <NumbersGrid number="03" p="School: High school - 2002-2005." p2="Field of study: general subject and marketing. " />
         </div>
         <Image img="images/designResize.png" height="260px" />
       </Flex>
